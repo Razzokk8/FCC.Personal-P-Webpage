@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+:root {
+  font-size: 62.5%;
+  color: white;
+  margin: 0 auto;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: #212529;
+}
+#welcome-section {
+  height: 100vh;
+  background-image: url(./images/1.3re1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 3px #212529;
+}
+#projects,
+#profile {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  max-width: 35vw;
+}
+.col {
+  display: flex;
+  justify-content: center;
+}
+footer {
+  min-height: 20vh;
+  background-image: url(./images/1.3re1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 3px #212529;
+  font-size: 1.8rem;
+}
