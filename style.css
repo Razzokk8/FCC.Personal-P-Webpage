@@ -11,6 +11,9 @@
 body {
   background-color: #212529;
 }
+#navbar {
+  min-height: 5vh;
+}
 #welcome-section {
   height: 100vh;
   background-image: url(./images/1.3re1.png);
@@ -33,15 +36,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-.card {
-  max-width: 35vw;
-}
 .col {
   display: flex;
   justify-content: center;
 }
 footer {
-  min-height: 20vh;
+  min-height: 15vh;
   background-image: url(./images/1.3re1.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,5 +52,40 @@ footer {
   justify-content: center;
   align-items: center;
   text-shadow: 2px 3px #212529;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.card-image {
+  border: solid 13px #212529;
+  width: 100%;
+  height: 20vh;
+}
+.im1 {
+  background-image: url(./images/Screen\ Shot\ 2021-07-19\ at\ 19.41.23.png);
+  background-size: cover;
+}
+.im2 {
+  background-image: url(./images/Screen\ Shot\ 2021-07-19\ at\ 19.48.04.png);
+  background-size: cover;
+}
+.im3 {
+  background-image: url(./images/Screen\ Shot\ 2021-07-19\ at\ 19.51.05.png);
+  background-size: cover;
+}
+.im4 {
+  background-image: url(./images/Screen\ Shot\ 2021-07-19\ at\ 19.50.38.png);
+  background-size: cover;
+}
+#ti {
+  min-height: 15vh;
+}
+.card {
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  max-width: 740px;
+  border: none;
+}
+.card-body {
+  border: solid 13px #212529;
 }
