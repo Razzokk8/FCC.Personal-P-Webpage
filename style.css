@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Nunito&display=swap");
 :root {
   font-size: 62.5%;
   color: white;
@@ -14,15 +14,32 @@ body {
 }
 #navbar {
   min-height: 5vh;
+  font-size: 1.75rem;
+}
+.navbar-toggler:hover {
+  background-color: darkcyan;
+}
+.navbar-toggler {
+  margin: 6px;
+}
+.nav-link {
+  margin: 0px 15px;
+  height: 100%;
+  width: auto;
+}
+
+#extra {
+  padding: 40px;
 }
 #welcome-section {
-  border-radius: 15px;
   height: 100vh;
   background-image: url(./images/1.3re1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  font-family: "Press Start 2P", cursive;
+  font-family: "Cabin", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.15rem;
   color: white;
   display: flex;
   flex-direction: column;
@@ -30,7 +47,19 @@ body {
   align-items: center;
   text-shadow: 2px 3px #212529;
 }
-#projects,
+.hi {
+  font-size: 4rem;
+}
+.rl {
+  font-size: 2.5rem;
+}
+#projects {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 #profile,
 #bootstrap {
   min-height: 70vh;
@@ -42,6 +71,7 @@ body {
 .col {
   display: flex;
   justify-content: center;
+  padding: 20px 10px;
 }
 footer {
   min-height: 15vh;
@@ -51,9 +81,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   font-size: 1.4rem;
   text-align: center;
+}
+footer > p {
+  margin: 10px;
+  line-height: 2rem;
 }
 .card-image {
   border: none;
@@ -63,8 +96,17 @@ footer {
 }
 .im1 {
   background-image: url(./images/Screen\ Shot\ 2021-07-19\ at\ 19.41.23.png);
+
   background-size: cover;
   opacity: 0.6;
+  background-color: darkcyan;
+}
+.im1:hover,
+.im2:hover,
+.im3:hover,
+.im4:hover,
+.im5:hover {
+  opacity: 0.35;
 }
 .im2 {
   background-image: url(./images/Screen\ Shot\ 2021-07-19\ at\ 19.48.04.png);
@@ -99,7 +141,7 @@ footer {
   background-color: black;
   color: white;
   font-size: 1.5rem;
-  max-width: 740px;
+  max-width: 600px;
   border: none;
 }
 
@@ -111,12 +153,13 @@ footer {
   opacity: 0.6;
 }
 #profile {
-  border-radius: 15px;
   background-image: url(./images/1.3re1.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
-  font-family: "Press Start 2P", cursive;
+  font-family: "Cabin", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
   color: white;
   display: flex;
   flex-direction: column;
@@ -124,24 +167,47 @@ footer {
   align-items: center;
   text-shadow: 2px 3px #212529;
 }
-.minico {
+
+.minico1 {
+  width: 100%;
+  height: 68vh;
   background: linear-gradient(115deg, #00000088, #2b2b3b7a);
   display: flex;
   flex-direction: column;
+  flex-shrink: 14rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-radius: 15px;
-  padding: 55px;
+}
+
+.minico2 {
+  width: 100%;
+  height: 93vh;
+  position: relative;
+  top: 2.5vh;
+  background: linear-gradient(115deg, #00000088, #2b2b3b7a);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 14rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .ickon > a {
   color: white;
-  padding: 25px;
+  padding: 10px;
+  text-decoration: none;
 }
 #icon-container {
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.ickon > a > p {
+  margin: 10px;
 }
 .ickon {
+  display: flex;
+  justify-content: center;
   text-shadow: 2px 3px #212529;
 }
 .card-title {
@@ -170,13 +236,158 @@ footer {
 }
 .btn {
   font-size: 1.5rem;
+  margin: 15px;
   padding: 10px;
   border: none;
   color: darkcyan;
+  background-color: black;
 }
 
 .btn:hover,
 .nav-link:hover {
   background-color: darkcyan;
   color: black;
+}
+.scale-up-center {
+  -webkit-animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.vibrate-1 {
+  -webkit-animation: vibrate-1 0.5s linear infinite both;
+  animation: vibrate-1 0.5s linear infinite both;
+}
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+.flicker-2 {
+  -webkit-animation: flicker-2 1s linear infinite both;
+  animation: flicker-2 1s linear infinite ease-in-out;
+}
+
+@-webkit-keyframes flicker-2 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  41.99% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  43.01% {
+    opacity: 1;
+  }
+  45.99% {
+    opacity: 1;
+  }
+  46% {
+    opacity: 0;
+  }
+  46.9% {
+    opacity: 0;
+  }
+  46.91% {
+    opacity: 1;
+  }
+  51.99% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0;
+  }
+  52.8% {
+    opacity: 0;
+  }
+  52.81% {
+    opacity: 1;
+  }
+}
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 992px) {
+  .hiki {
+    margin-left: -15px;
+  }
+  .hi {
+    font-size: 5rem;
+  }
+  .rl {
+    font-size: 4rem;
+  }
 }
